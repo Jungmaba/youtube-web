@@ -31,4 +31,4 @@ jobs:
                   aws s3 cp ./dist s3://dev-youtube-web-test/ --recursive
 
             - name: Cloudfront 캐시 무효화
-              run: aws cloudfront create-invalidation --distrbutuon-id E2QYY3E7UZKQ4W --paths "/*"
+              run: aws cloudfront create-invalidation --distribution-id E2QYY3E7UZKQ4W --paths "/*"
